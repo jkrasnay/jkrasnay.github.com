@@ -1,0 +1,76 @@
+@font-face {
+    font-family: 'AurulentSansBold';
+    src: url('AurulentSans-Bold-webfont.eot');
+    src: local('☺'), url('AurulentSans-Bold-webfont.woff') format('woff'), url('AurulentSans-Bold-webfont.ttf') format('truetype'), url('AurulentSans-Bold-webfont.svg#webfont') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'CartoGothicStdBook';
+    src: url('CartoGothicStd-Book-webfont.eot');
+    src: local('☺'), url('CartoGothicStd-Book-webfont.woff') format('woff'), url('CartoGothicStd-Book-webfont.ttf') format('truetype'), url('CartoGothicStd-Book-webfont.svg#webfont') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'CartoGothicStdBold';
+    src: url('CartoGothicStd-Bold-webfont.eot');
+    src: local('☺'), url('CartoGothicStd-Bold-webfont.woff') format('woff'), url('CartoGothicStd-Bold-webfont.ttf') format('truetype'), url('CartoGothicStd-Bold-webfont.svg#webfont') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'FFFTusjBold';
+    src: url('FFF_Tusj-webfont.eot');
+    src: local('☺'), url('FFF_Tusj-webfont.woff') format('woff'), url('FFF_Tusj-webfont.ttf') format('truetype'), url('FFF_Tusj-webfont.svg#webfont') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: Georgia, "Times New Roman", times, serif;
+    font-size: 100%;
+    line-height: 1.4;
+}
+
+h1 {
+  font: 32px CartoGothicStdBold, Arial, Helvetica, sans-serif;
+  margin-bottom: 20px;
+}
+
+p {
+  margin-bottom: 20px;
+}
+
+.banner {
+    font: 70px FFFTusjBold, Georgia, Times New Roman, serif;
+    margin: 30px 0;
+}
+
+.banner a {
+    color: black;
+    text-decoration: none;
+}
+
+pre {
+    margin-bottom: 0;
+}
+
+.highlight {
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+    padding: 5px 10px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+}
+
+.sidebar {
+    border-left: 1px dotted #ccc;
+    color: #888;
+    font-size: 90%;
+    font-family: CartoGothicStdBook, Arial, Helvetica, sans-serif;
+    padding-left: 10px;
+}
