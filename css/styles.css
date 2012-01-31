@@ -22,16 +22,8 @@
     font-style: normal;
 }
 
-@font-face {
-    font-family: 'FFFTusjBold';
-    src: url('FFF_Tusj-webfont.eot');
-    src: local('☺'), url('FFF_Tusj-webfont.woff') format('woff'), url('FFF_Tusj-webfont.ttf') format('truetype'), url('FFF_Tusj-webfont.svg#webfont') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
-
 body {
-    font-family: Georgia, "Times New Roman", times, serif;
+    font-family: CartoGothicStdBook, Arial, Helvetica, sans-serif;
     font-size: 100%;
     line-height: 1.4;
 }
@@ -46,20 +38,25 @@ p {
 }
 
 .banner {
-    font: 70px FFFTusjBold, Georgia, Times New Roman, serif;
-    margin: 30px 0;
+  border-bottom: 2px solid;
+  font: 50px CartoGothicStdBold, Arial, Helvetica, sans-serif;
+  margin: 30px 0;
 }
 
 .banner a {
-    color: black;
+    color: #333;
     text-decoration: none;
 }
 
 pre {
+  background-color: #f8f8f8;
     margin-bottom: 0;
+    overflow: auto;
+    /*
 }
 
 .highlight {
+*/
     border: 1px solid #ccc;
     margin-bottom: 20px;
     padding: 5px 10px;

@@ -35,16 +35,18 @@ post to the Ubuntu forums
 site](http://ubuntuforums.org/showthread.php?p=5809670), but have been
 tweaked to work on Ubuntu 10.10.
 
-    sudo apt-get install build-essential libxext-dev libx11-dev
-    cd
-    mkdir nvidia-source
-    cd nvidia-source/
-    apt-get source nvidia-settings
-    cd nvidia-settings-*/
-    cd src/libXNVCtrl
-    make
-    cd ../../samples
-    make
+{% highlight bash %}
+sudo apt-get install build-essential libxext-dev libx11-dev
+cd
+mkdir nvidia-source
+cd nvidia-source/
+apt-get source nvidia-settings
+cd nvidia-settings-*/
+cd src/libXNVCtrl
+make
+cd ../../samples
+make
+{% endhighlight %}
 
 At this point I got a compile error when compiling
 `nv-control-events.c`. 
@@ -123,16 +125,18 @@ the fact that one of the configurations has a display resolution of
 I put the required commnds together in a shell script that toggles the
 display configuration:
 
-    #!/bin/sh
-    nv-control-dpy --probe-dpys
-    nv-control-dpy --set-associated-dpys 0x00030001
-    nv-control-dpy --add-metamode "DFP-0: NULL, CRT-0: nvidia-auto-select +0+0, DFP-1: nvidia-auto-select +1920+0"
+{% highlight bash %}
+#!/bin/sh
+nv-control-dpy --probe-dpys
+nv-control-dpy --set-associated-dpys 0x00030001
+nv-control-dpy --add-metamode "DFP-0: NULL, CRT-0: nvidia-auto-select +0+0, DFP-1: nvidia-auto-select +1920+0"
 
-    if xrandr | grep 'current 1920'; then
-        xrandr -s 3840x1200
-    else
-        xrandr -s 1920x1200
-    fi
+if xrandr | grep 'current 1920'; then
+    xrandr -s 3840x1200
+else
+    xrandr -s 1920x1200
+fi
+{% endhighlight %}
 
 In Gnome, you can bind this to a keystroke by running *System >
 Preferences > Keyboard Shortcuts*. Click *Add*, and specify the shell
