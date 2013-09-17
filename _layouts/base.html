@@ -1,53 +1,59 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
-<head>
-   <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-   <title>{{ page.title }}</title>
-   <meta name="author" content="John Krasnay" />
-   <link href="/atom.xml" rel="alternate" title="John Krasnay's Bits" type="application/atom+xml" />
+<html lang="en">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <title>{{ page.title }}</title>
+    <meta name="author" content="John Krasnay" />
+    <link href="/atom.xml" rel="alternate" title="John Krasnay's Bits" type="application/atom+xml" />
 
-   <!-- syntax highlighting CSS -->
-   <link rel="stylesheet" href="/css/syntax.css" type="text/css" />
+    <!-- syntax highlighting CSS -->
+    <link rel="stylesheet" href="/css/syntax.css" type="text/css" />
 
-   <!-- Homepage CSS -->
-   <link rel="stylesheet" href="/css/reset.css" type="text/css" />
-   <link rel="stylesheet" href="/css/960.css" type="text/css" />
-   <link rel="stylesheet" href="/css/styles.css" type="text/css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">
+    <link href='http://fonts.googleapis.com/css?family=Lato:300,400,400italic,700|IM+Fell+English' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/css/styles.css" type="text/css" />
 
-</head>
-<body>
+    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
 
-<div class="container_12">
-
-  <div class="grid_12 banner">
-    <a href="/">John Krasnay's Bits</a>
-  </div>
-  
-  <div class="clear"></div>
-
-  <div class="grid_9 content">
-      {{ content }}
-  </div>
-  
-  <div class="grid_3">
-    <div class="sidebar">
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="banner">
+            John Krasnay's Bits
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-8">
+          <div class="content">
+            {{ content }}
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="sidebar">
         
-      <h3>About Me</h3>
+            <h3>About Me</h3>
 
-      <p>
-        I'm the co-founder and CTO of <a href="http://effectiveregsitration.com">Effective Registration</a>.
-        Previously, I worked as a contract Java developer, system architect, and development team leader for over 16 years.
-      </p>
+            <p>
+              I'm the co-founder and CTO of <a href="http://effectiveregsitration.com">Effective Registration</a>.
+              Previously, I worked as a contract developer, system architect, and development team leader for over 20 years.
+            </p>
         
-      <p> My major open source contribution is the <a
-          href="http://vex.sourceforge.net/">Vex XML editor</a>. Vex has been
-      adopted by the <a href="http://www.eclipse.org/webtools/incubator/">Eclipse WTP Incubator</a> and will hopefully one day be the official visual XML
-      editor for Eclipse.
-      </p>
+            <p> My major open source contribution is the <a
+                href="http://vex.sourceforge.net/">Vex XML editor</a>. Vex has been
+            adopted by the <a href="http://www.eclipse.org/webtools/incubator/">Eclipse WTP Incubator</a> and will hopefully one day be the official visual XML
+            editor for Eclipse.
+            </p>
 
+            <p>Also, check out my <a href="https://github.com/jkrasnay/sqlbuilder">SQL Builder</a> library for lightweight dynamic SQL in Java.</p>
+
+          </div>
+        </div>
+      </div>
     </div>
-  </div>
-</div>
 
-</body>
+  </body>
 </html>

@@ -24,7 +24,7 @@ extract in 3½ gallons of water; however, my boil pot only holds just
 over 3 gallons, so instead I went with 3 gallons of water and boiled the
 extract in 2½ gallons of water.
 
-![The Happy Brewer Boils His Wort](/images/2013-09-06-happy-brewer.jpg)
+![The Happy Brewer Boils His Wort]({{ site.url }}/images/2013-09-06-happy-brewer.jpg)
 
 Cooling the water and the wort took much longer than expected. I put the
 water in the fermenting bucket in a bath of cold water and ice in my

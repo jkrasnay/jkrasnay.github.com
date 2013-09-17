@@ -1,73 +1,49 @@
-@font-face {
-    font-family: 'AurulentSansBold';
-    src: url('AurulentSans-Bold-webfont.eot');
-    src: local('☺'), url('AurulentSans-Bold-webfont.woff') format('woff'), url('AurulentSans-Bold-webfont.ttf') format('truetype'), url('AurulentSans-Bold-webfont.svg#webfont') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'CartoGothicStdBook';
-    src: url('CartoGothicStd-Book-webfont.eot');
-    src: local('☺'), url('CartoGothicStd-Book-webfont.woff') format('woff'), url('CartoGothicStd-Book-webfont.ttf') format('truetype'), url('CartoGothicStd-Book-webfont.svg#webfont') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'CartoGothicStdBold';
-    src: url('CartoGothicStd-Bold-webfont.eot');
-    src: local('☺'), url('CartoGothicStd-Bold-webfont.woff') format('woff'), url('CartoGothicStd-Bold-webfont.ttf') format('truetype'), url('CartoGothicStd-Bold-webfont.svg#webfont') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
 
 body {
-    font-family: CartoGothicStdBook, Arial, Helvetica, sans-serif;
-    font-size: 100%;
-    line-height: 1.4;
+  font-family: 'Lato', sans-serif;
+  font-size: 18px;
 }
 
-h1 {
-  font: 32px CartoGothicStdBold, Arial, Helvetica, sans-serif;
-  margin-bottom: 20px;
-}
-
-p {
-  margin-bottom: 20px;
+.container {
+  background-color: white;
+  max-width: 970px;
 }
 
 .banner {
-  border-bottom: 2px solid;
-  font: 50px CartoGothicStdBold, Arial, Helvetica, sans-serif;
-  margin: 30px 0;
+  font-family: 'IM Fell English', serif;
+  font-size: 40px;
+  padding: 20px 0;
 }
 
-.banner a {
-    color: #333;
-    text-decoration: none;
+.content {
+  line-height: 1.6;
 }
 
-pre {
-  background-color: #f8f8f8;
-    margin-bottom: 0;
-    overflow: auto;
-    /*
-}
-
-.highlight {
-*/
-    border: 1px solid #ccc;
-    margin-bottom: 20px;
-    padding: 5px 10px;
-    -moz-border-radius: 3px;
-    -webkit-border-radius: 3px;
+.content img {
+  max-width: 100%;
 }
 
 .sidebar {
-    border-left: 1px dotted #ccc;
-    color: #888;
-    font-size: 90%;
-    font-family: CartoGothicStdBook, Arial, Helvetica, sans-serif;
-    padding-left: 10px;
+  font-weight: 300;
+}
+
+h1 {
+  font: 24px 'Lato', sans-serif;
+  font-weight: bold;
+  margin: 0 0 5px;
+}
+
+h3 {
+  font: 20px 'Lato', sans-serif;
+  margin: 0 0 5px;
+}
+
+p {
+  margin: 0 0 1em;
+}
+
+p.date {
+  color: #999;
+  font-size: 80%;
+  line-height: 1.0;
 }
